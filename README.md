@@ -1,6 +1,3 @@
-# vscode-django
-Vscode configs for Python Django projects
-
 # Required Extensions
 
 ## [Python Microsoft Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
@@ -23,3 +20,10 @@ The Django extension by Baptisteo adds support for Django-specific features, suc
 
 ## [Django Support](https://marketplace.visualstudio.com/items?itemName=junstyle.vscode-django-support)
 Junstyle's Django Support extension provides tools for better Django integration, including code snippets, template tag completions, and management command running, streamlining Django development.
+
+
+## [Mypy Type Checker](https://marketplace.visualstudio.com/items?itemName=matangover.mypy)
+Mypy is a static type checker for Python. By adding type annotations to your code, Mypy can check for errors and help you write more robust and maintainable code.
+
+## [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+Ruff is a linter and code formatter for Python that enforces a consistent style and helps you catch errors early. It supports PEP 8 compliance and can be configured to meet your specific coding standards.
