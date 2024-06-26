@@ -1,0 +1,108 @@
+{
+  // Mypy Type Checker Configuration
+  "mypy-type-checker.importStrategy": "fromEnvironment",
+  "mypy-type-checker.args": [
+      "--disallow-untyped-defs=True",
+      "--disallow-untyped-calls=True",
+      "--check-untyped-defs=True",
+      "--no-implicit-optional=True"
+  ],
+
+  // General VSCode Settings
+  "window.zoomLevel": 0,
+
+  // Pylance Configuration (ms-python.vscode-pylance)
+  "python.languageServer": "Pylance",
+
+  // Python Microsoft Extension Configuration (ms-python.python)
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestEnabled": true,
+  "python.testing.pytestArgs": ["-x"],
+  "python.defaultInterpreterPath": "venv/bin/python",
+
+  // Python Formatter Configuration (ms-python.black-formatter)
+  "[python]": {
+      "editor.defaultFormatter": "ms-python.black-formatter",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true,
+      "editor.formatOnType": true,
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": "explicit"
+      }
+  },
+
+  // Additional Black Formatter Configuration for PEP 8 Compliance
+  "python.formatting.provider": "black",
+  "python.formatting.blackArgs": [
+      "--line-length", "79",
+      "--skip-string-normalization",
+      "--target-version", "py312"
+  ],
+
+  // Flake8 Configuration
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.linting.flake8Args": [
+      "--max-line-length=79",
+      "--ignore=E203,W503"
+  ],
+
+  // HTML Formatter Configuration
+  "[html]": {
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "vscode.html-language-features",
+      "editor.quickSuggestions": {
+          "other": true,
+          "comments": true,
+          "strings": true
+      }
+  },
+
+  // Django HTML Formatter Configuration (batisteo.vscode-django)
+  "[django-html]": {
+      "editor.formatOnSave": false,
+      "editor.defaultFormatter": "batisteo.vscode-django",
+      "editor.quickSuggestions": {
+          "other": true,
+          "comments": true,
+          "strings": true
+      }
+  },
+
+  // Django Support Configuration (junstyle.vscode-django-support)
+  "[python.manage]": {
+      "editor.defaultFormatter": "junstyle.vscode-django-support",
+      "editor.formatOnSave": true,
+      "editor.tabSize": 4,
+      "editor.insertSpaces": true
+  },
+
+  // File Associations
+  "files.associations": {
+      "*.js": "javascript",
+      "*.jsx": "javascriptreact",
+      "*.xml": "html",
+      "*.svg": "html",
+      "*.html": "html",
+      "**/*.html": "html",
+      "**/templates/**/*.html": "django-html",
+      "**/base_templates/**/*.html": "django-html",
+      "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+  },
+
+  // Emmet Configuration for Django HTML
+  "emmet.includeLanguages": {
+      "django-html": "html",
+      "javascript": "javascriptreact",
+      "typescript": "typescriptreact"
+  },
+
+  // Path IntelliSense Configuration (christian-kohler.path-intellisense)
+  "path-intellisense.autoTriggerNextSuggestion": true,
+
+  // Additional Python Analysis Paths
+  "python.analysis.extraPaths": [
+      "./src"
+  ]
+}

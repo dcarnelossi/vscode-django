@@ -1,0 +1,27 @@
+{
+    // Python Debugger For: Django.
+    // Change django-folder for yours
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Django",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}\\django-folder\\manage.py",
+            "args": [
+                "runserver"
+            ],
+            "django": true,
+            "autoStartBrowser": false
+        },
+        {
+            "name": "Extension",
+            "type": "extensionHost",
+            "request": "launch",
+            "runtimeExecutable": "${execPath}",
+            "args": [
+              "--extensionDevelopmentPath=${workspaceFolder}"
+            ]
+        }
+    ]
+}
