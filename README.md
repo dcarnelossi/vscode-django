@@ -11,6 +11,9 @@ Contributions and suggestions are welcome! If you have any ideas or improvements
 
 ## Required Extensions
 
+By utilizing these extensions, you can ensure your Django projects adhere to best practices, are easy to maintain, and are free from common coding errors. Start optimizing your VSCode environment today and experience the difference in your development workflow!
+
+
 ### [Python Microsoft Extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
 The official extension by Microsoft enhances Python development with features like code completion, debugging, and testing tools, making it essential for Python developers using VSCode.
 
@@ -40,5 +43,3 @@ Mypy is a static type checker for Python. By adding type annotations to your cod
 
 ### [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
 Ruff is a linter and code formatter for Python that enforces a consistent style and helps you catch errors early. It supports PEP 8 compliance and can be configured to meet your specific coding standards.
-
-By utilizing these extensions, you can ensure your Django projects adhere to best practices, are easy to maintain, and are free from common coding errors. Start optimizing your VSCode environment today and experience the difference in your development workflow!
